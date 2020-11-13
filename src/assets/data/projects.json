@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Daily Recipe",
+        "description": "MERN-Stack web application, an ingredient and recipe meal kit delivery service.",
+        "technologies": ["Express", "NodeJs", "MongoDB", "React", "JWT", "HTML/CSS", "Bootstrap", "AWS"],
+        "link": "https://github.com/Svcg17/DailyRecipe"
+    },
+    {
+        "name": "I'm Bored",
+        "description": "Web application where you can play classic, retro-style games made from scratch with JavaScript.",
+        "technologies": ["React", "HTML/CSS", "Heroku"],
+        "link": "https://imbored-games.herokuapp.com/"
+    },
+    {
+        "name": "Airbnb Clone",
+        "description": "An Airbnb clone made with Python and Flask. Includes a console for testing.",
+        "technologies": ["Flask", "MySQL", "jQuery", "Nginx"],
+        "link": "https://github.com/Svcg17/AirBnB_clone_v4"
+    },
+    {
+        "name": "File Manager",
+        "description": "A simple file manager with user authentication made with JavaScript",
+        "technologies": ["Express", "MongoDB", "Redis"],
+        "link": "https://github.com/Svcg17/holbertonschool-files_manager"
+    }
+]
