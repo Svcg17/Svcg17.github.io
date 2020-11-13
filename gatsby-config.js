@@ -1,10 +1,38 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `Sofia Cheung`,
+    author: `Sofia Cheung Guardia`,
+    description: `My personal website`,
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+    resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Vidaloka`,
+          },
+          {
+            family: `Raleway`,
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Sofia Cheung`,
+        short_name: `Sofia Ch`,
+        start_url: `/`,
+        icon: `src/assets/avatar.svg`,
+      },
+    },
+  ]
 }
