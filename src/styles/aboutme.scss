@@ -1,0 +1,40 @@
+@use "index";
+
+#aboutme {
+    background-color: #fec89a;
+    padding: 2rem .5rem;
+    h1 {
+        text-align: center;
+    }
+    div {
+        padding: 1rem;
+        background-color: #F9DCC4;
+        @include index.boxLayout(index.$primary-color);
+    }
+}
+
+@media only screen and (min-width: index.$breakpoint-md) {
+    #aboutme {
+        padding: 1rem 4rem 5rem 4rem;
+        div {
+            padding: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: index.$breakpoint-xl) {
+    #aboutme {
+        @include index.display;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: index.$breakpoint-xl) {
+    #aboutme {
+        padding: 2rem 0 6rem 0;
+        div {
+            width: 80%;
+        }
+    }
+}
