@@ -1,0 +1,110 @@
+@use "index";
+
+#projects {
+    padding: 3rem .5rem;
+    background-color: #fcd5ce;
+    h1 {
+        margin: 0 0 1rem 0;
+        text-align: center;
+    }
+}
+
+.card {
+    background-color: #ffcaac;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    @include index.boxLayout(index.$primary-color);
+    display: flex;
+    flex-direction: column;
+    h2, p {
+        margin: 0;
+        padding: 1rem;
+    }
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+.cardBody {
+    text-align: center;
+    img {
+        width: 95%;
+        border-radius: 35px;
+        border: 5px solid index.$primary-color;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.cardSide {
+    text-align: center;
+    h4 {
+        padding: 1.7rem 0 0 0;
+        margin: 0;
+    }
+    ul {
+        text-align: start;
+        width: 14rem;
+        li {
+            list-style: none;
+        }
+        li::before {
+            content: "\2022"; 
+            font-weight: bold;
+            display: inline-block;
+            color: index.$primary-color;
+            margin-right: 6px;
+        }
+    }
+    a {
+        background-color: index.$color-light;
+        color: index.$primary-color;
+    }
+}
+
+@media only screen and (min-width: index.$breakpoint-md) {
+    #projects {
+        padding: 2rem;
+    }
+
+    .card {
+        padding: 2rem;
+        box-shadow: 10px 10px index.$primary-color; 
+    }
+}
+
+@media only screen and (min-width: index.$breakpoint-lg) {
+#projects {
+    @include index.display;
+    flex-direction: column;
+    h1 {
+        padding: 2rem;
+    }
+}
+
+.card {
+    margin: 2.5rem 0;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardBody {
+    text-align: start;
+}
+
+.cardSide {
+    ul {
+        width: 14rem;
+    }
+}
+}
+
+
+@media only screen and (min-width: index.$breakpoint-xl) {
+    #projects {
+        .card {
+            width: 75%;
+        }
+    }
+}
