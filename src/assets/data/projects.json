@@ -3,7 +3,7 @@
         "name": "Daily Recipe",
         "description": "MERN-Stack web application, an ingredient and recipe meal kit delivery service.",
         "technologies": ["Express", "NodeJs", "MongoDB", "React", "JWT", "HTML/CSS", "Bootstrap", "AWS"],
-        "link": "https://github.com/Svcg17/DailyRecipe"
+        "link": "https://dailyrecipe.dev/"
     },
     {
         "name": "I'm Bored",
