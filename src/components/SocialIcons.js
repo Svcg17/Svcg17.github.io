@@ -1,5 +1,4 @@
 import React from 'react'
-import Twitter from '../assets/Twitter.svg'
 import Github from '../assets/Github.svg'
 import LinkedIn from '../assets/LinkedIn.svg'
 
