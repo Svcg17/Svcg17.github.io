@@ -7,22 +7,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-    resolve: `gatsby-plugin-sass`,
+      resolve: `gatsby-plugin-sass`,
       options: {
         implementation: require("sass"),
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Vidaloka`,
-          },
-          {
-            family: `Raleway`,
-          },
-        ],
+        fonts: [`Vidaloka`, `Raleway`],
       },
     },
     {
@@ -31,8 +24,8 @@ module.exports = {
         name: `Sofia Cheung`,
         short_name: `Sofia Ch`,
         start_url: `/`,
-        icon: `src/assets/avatar.svg`,
+        icon: `src/assets/Avatar.svg`,
       },
     },
-  ]
+  ],
 }
