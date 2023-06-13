@@ -18,6 +18,6 @@
     "name": "I'm Bored",
     "description": "Web application where you can play classic, retro-style games made from scratch with JavaScript.",
     "technologies": ["React", "HTML/CSS", "Heroku"],
-    "link": "https://imbored-games.herokuapp.com/"
+    "link": "https://github.com/tassavarat/im_bored"
   }
 ]
